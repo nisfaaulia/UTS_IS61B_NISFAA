@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+
     <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
@@ -34,9 +33,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                   
+
                 </div>
-                <div class="sidebar-brand-text mx-3">ADMINISLATOR</div>
+                <div class="sidebar-brand-text mx-3">SMK 3 BANDA ACEH</div>
             </a>
 
             <!-- Divider -->
@@ -45,25 +44,22 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                   
-                    <span>DASHBOARD</span></a>
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-           
-            <div class="sidebar-heading">
-                NAVIGATION
-            </div>
+            
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                   
-                    <span>DATA BALITA</span>
+
+                    <span>Data Siswa</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -78,8 +74,8 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    
-                    <span>DATA IMUNISASI</span>
+
+                    <span>Pendaftaran</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -96,19 +92,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-           
 
-          
-
-         
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
 
         </ul>
         <!-- End of Sidebar -->
@@ -291,9 +275,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-regular fa-user "></i> 
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">PROFIL</span>
-                                
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -327,7 +311,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">DATA BALITA POSYANDU</h1>
+                    <h1 class="h3 mb-4 text-gray-800">DATA SISWA</h1>
 
                 </div>
                 <!-- /.container-fluid -->

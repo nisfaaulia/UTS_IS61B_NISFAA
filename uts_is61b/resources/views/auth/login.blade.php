@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,66 +41,63 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
+                                    <form action="{{ route('login') }}" method="post">
+                                        @csrf
+                                        <div class="input-group mb-3">
+                                            <input placeholder="Masukkan Email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                            @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                          <div class="input-group-append">
+                                            <div class="input-group-text">
+                                              <span class="fas fa-envelope"></span>
                                             </div>
+                                          </div>
                                         </div>
-                                        <a href="{{route('login')}}" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
-                                        <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                        </a>
-                                    </form>
+                                        <div class="input-group mb-3">
+                                            <input placeholder="Masukkan Password" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                          <div class="input-group-append">
+                                            <div class="input-group-text">
+                                              <span class="fas fa-lock"></span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-8">
+                                            <div class="icheck-primary">
+                                              <input type="checkbox" id="remember" name="remember" {{ old('remember') ? 'checked' : '' }}>
+                                              <label for="remember">
+                                                Remember Me
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <!-- /.col -->
+                                          <div class="col-4">
+                                           
+                                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                          </div>
+                                          <!-- /.col -->
+                                        </div>
+                                      </form>
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="forgot-password.html">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register">Create an Account!</a>
+                                        <a class="small" href="{{route('register')}}">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-</body>
-
-</html>
                     </div>
                 </div>
 
