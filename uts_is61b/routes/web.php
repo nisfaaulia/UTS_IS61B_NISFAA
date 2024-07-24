@@ -30,3 +30,4 @@ Route::post('/balita/store/', [BalitaController::class, 'store'])->middleware('a
 Route::get('/balita/edit/{id}', [BalitaController::class, 'edit'])->middleware('auth');
 Route::put('/balita/{id}', [BalitaController::class, 'update'])->middleware('auth');
 Route::delete('/balita/{id}', [BalitaController::class, 'destroy'])->middleware('auth');
+ 
